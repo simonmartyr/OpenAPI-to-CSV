@@ -1,0 +1,16 @@
+{
+  "name": "open-api-to-csv",
+  "version": "1.0.0",
+  "author": {
+    "name": "Simon Martyr"
+  },
+  "main": "script.js",
+  "license": "MIT",
+  "scripts": {
+    "swagger-combine": "swagger-cli bundle input/input.yaml -o input/input.json -t json",
+    "start": "yarn swagger-combine && node script.js"
+  },
+  "dependencies": {
+    "swagger-cli": "^4.0.4"
+  }
+}
